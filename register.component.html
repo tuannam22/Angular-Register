@@ -1,0 +1,16 @@
+<form (submit)="registerform(formRegister)" #formRegister="ngForm">
+    <div class="form-group">      
+      <input type="text" class="form-control" [(ngModel)]="txtUsername" name="txtUsername" aria-describedby="emailHelp" placeholder="Username">
+    </div>
+    <div class="form-group">     
+      <input type="password" class="form-control" [(ngModel)]="txtPassword" name="txtPassword" placeholder="Password">
+    </div>
+    <div class="form-group">        
+        <input type="text" class="form-control" [(ngModel)]="txtName" name="txtName" placeholder="Name">
+      </div>
+      <div class="form-group">        
+        <input type="email" class="form-control" [(ngModel)]="txtEmail" name="txtEmail" placeholder="Email">
+      </div>    
+    <button type="submit" class="btn btn-primary" id="submit" name="submit">Add</button>
+    <h2 *ngIf="thongbao==true">{{ noidung }}</h2>
+</form>
