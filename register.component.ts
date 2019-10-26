@@ -1,3 +1,6 @@
+// Trong Component->Pages->register
+
+
 import { Component } from '@angular/core';
 import { RegisterService } from '../../../Services/Register.module';
 
